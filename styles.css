@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
+html {
+    scroll-behavior: smooth;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -40,17 +44,22 @@ li, a, button {
     color: white;
 }
 
+.navLinks li:hover {
+    font-size: 18px; 
+}
+
 h1,h2, h3 {
     color: white;
 }
 
 .contain {
+    width: 100%;
     padding: 30px 10%;
 }
 
 section {
     display: flex; 
-    height: 80vh;
+    min-height: 80vh;
     justify-content: left;
     align-items: center;
 }
@@ -79,4 +88,273 @@ section {
 .hero a {
     color: red;
     font-weight: 500;
+}
+
+.heading {
+    color: black;
+    font-size: x-large;
+    padding: 15px 0px ;
+}
+
+.redLine {
+    border: 1px solid black;
+    width: 40px;
+  }
+
+.subHeading {
+    color: red;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.text {
+    padding-bottom: 40px;
+    font-size: larger;
+}
+
+button {
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+}
+
+#services {
+    min-height: 100%;
+
+}
+
+.contact {}
+
+footer {
+    background-color: black;
+}
+
+.tiles {
+    margin: 10px;
+}
+
+.tile {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(163, 163, 163);
+    width: 200px;
+    min-height: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 40px 10px;
+}
+
+.tile:hover {
+    cursor: pointer;
+    min-height: 160px;
+    width: 300px;
+    padding: 80px 10px;
+}
+
+.title h2 {
+    font-size: 20px;
+}
+
+#myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
+    min-height: 200px;
+    width: 200px;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 18px;
+    font-weight: 350;
+    margin-left: 10px;
+}
+
+#myBtn:hover, #myBtn2:hover, #myBtn3:hover, #myBtn4:hover, #myBtn5:hover, #myBtn6:hover {
+    min-height: 300px;
+    width: 300px;
+}
+
+
+ /* The Modal (background) */
+ .modal, .modal2, .modal3, .modal4, .modal5, .modal6  {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  #modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close, .close2, .close3, .close4, .close5, .close6 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus, .close6:hover, .close6:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  /* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+.centre {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  #contactForm {
+      background-color: black;
+      color: white;
+      min-height: 200px;
+      width: 1200px;
+      padding: 40px 30px;
+      
+  }
+
+  #contactForm h3 {
+      font-weight: 250;
+  }
+
+  label,input, textarea {
+      margin-bottom: 15px;
+      color: lightgray;
+      padding: 5px;
+
+  }
+
+  input,textarea {
+      border-radius: 0em;
+      border: none;
+  }
+
+  input {
+      min-height: 30px;
+      width: 400px;
+  }
+
+  textarea {
+      min-height: 120px;
+      width: 400px;
+      margin-bottom: 20px;
+  }
+
+  #send {
+      position: absolute;
+      background-color: red;
+      color: white;
+      min-height: 60px;
+      width: 300px;
+      margin-top: 10px;
+  }
+
+.socialLinks {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.socialLinks:hover {
+    height: 80px;
+    width: 80px;
+}
+
+footer li {
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+.centerFooter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
